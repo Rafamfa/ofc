@@ -210,3 +210,19 @@ function changeTheme () {
 
 toggleTheme.addEventListener("click", changeTheme);
 //fim da função mudar o tema
+
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+  event.preventDefault(); // Impede o envio real do formulário
+
+  // Pega os valores do formulário
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
+  
+  // Exibe a mensagem de confirmação
+  const responseMessage = document.getElementById("response-message");
+  responseMessage.innerText = `Obrigado, ${name}! Sua mensagem foi enviada com sucesso. Entraremos em contato em breve.`;
+  
+  // Limpa o formulário
+  document.getElementById("contact-form").reset();
+});
