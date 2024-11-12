@@ -844,7 +844,7 @@ width: 100%;
   font-weight: 700;
   animation: fadeInDown 1s both;
   display: block;
-  color: white;
+  color: var(--heading-color);
   background: rgba(0, 0, 0, 0.04);
   border-radius: 5px 5px 5px 5px;
   padding: 10px;
@@ -853,7 +853,7 @@ width: 100%;
 .hero p {
   width: 80%;
   margin: 0 auto 30px auto;
-  color: white;
+  color: var(--heading-color);
   animation: fadeInDown 1s both 0.2s;
   background: rgba(0, 0, 0, 0.075);
   border-radius: 5px 5px 5px 5px;
@@ -2389,6 +2389,7 @@ form button:hover {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+
 .dica-item h4,
 .ferramenta-item h4 {
   font-size: 1.2em;
@@ -2400,4 +2401,158 @@ form button:hover {
 .ferramenta-item p {
   font-size: 1em;
   color: #666;
+}
+
+/* Estilo geral para a seção de ferramentas */
+.ferramenta-container {
+  max-width: 800px;
+  margin: 0 auto; /* Centraliza a div na página */
+  padding: 20px;
+  background-color: #f9f9f9; /* Fundo suave */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  font-family: 'Arial', sans-serif;
+}
+
+/* Estilo do título principal */
+.ferramenta-container h3 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Estilo para cada item de ferramenta */
+.ferramenta-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Estilo para os itens de ferramentas */
+.ferramenta-item {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+}
+
+/* Estilo para as imagens das logos */
+.ferramenta-item img {
+  width: 60px; /* Tamanho da logo */
+  height: 60px;
+  margin-right: 10px; /* Espaço entre a imagem e o texto */
+  border-radius: 8px; /* Bordas suaves para o visual */
+}
+
+
+
+/* Título das ferramentas */
+.ferramenta-item h4 {
+  font-size: 20px;
+  margin: 0 0 5px 0;
+  color: var(--background-color);
+  margin-bottom: 10px;
+}
+
+
+/* Parágrafo descritivo */
+.ferramenta-item p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Efeito hover nos itens */
+.ferramenta-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Pequena margem entre os itens e o final da seção */
+.ferramenta-item:last-child {
+  margin-bottom: 0;
+}
+
+.ferramenta-extra {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.ferramenta-extra p{
+  color: var(--background-color);
+}
+.ferramenta-extra ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: var(--background-color);
+}
+
+.ferramenta-extra ul li {
+  margin-bottom: 5px;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 600px) {
+  .ferramenta-container {
+    padding: 15px;
+  }
+
+  .ferramenta-container h3 {
+    font-size: 20px;
+  }
+
+  .ferramenta-item h4 {
+    font-size: 18px;
+  }
+
+  .ferramenta-item p {
+    font-size: 14px;
+  }
+  .ferramenta-item {
+    flex-direction: column; /* Coloca logo e texto em coluna para telas pequenas */
+    align-items: flex-start;
+  }
+
+  .ferramenta-item img {
+    margin-bottom: 10px; /* Espaço entre a logo e o texto na vertical */
+  }
+}
+
+
+
+/* Banner principal do container */
+.ferramenta-banner {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.ferramenta-extra {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.ferramenta-extra p{
+  color: var(--background-color);
+}
+.ferramenta-extra ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: var(--background-color);
+}
+
+.ferramenta-extra ul li {
+  margin-bottom: 5px;
 }
